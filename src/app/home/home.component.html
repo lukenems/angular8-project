@@ -21,7 +21,4 @@
   </ng-template>
 </div>
 
-<div class="play-container" [ngStyle]="{
-  'background-color': clickCounter > 4 ? 'yellow' : 'lightgray',
-  'border':           clickCounter > 4 ? '4px solid black' : 'none'}
-">
+<div class="play-container" [class.active]='clickCounter > 4'>
